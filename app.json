@@ -1,0 +1,25 @@
+{
+  "expo": {
+    "name": "ReactNativeTimeOut",
+    "githubUrl": "https://github.com/akveo/kittenTricks",
+    "sdkVersion": "26.0.0",
+    "icon": "./icon.png",
+    "orientation": "portrait",
+    "loading": {
+      "icon": "./icon_rounded.png"
+    },
+    "androidStatusBar": {
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "bundleIdentifier": "com.balasch.rntimeout",
+      "buildNumber": "1.0.0",
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.balasch.rntimeout",
+      "versionCode": 16
+    },
+    "version": "1.0.0"
+  }
+}
