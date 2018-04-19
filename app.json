@@ -6,10 +6,7 @@
     "icon": "./icon.png",
     "orientation": "portrait",
     "loading": {
-      "icon": "./icon_rounded.png"
-    },
-    "androidStatusBar": {
-      "backgroundColor": "#ffffff"
+      "icon": "./icon.png"
     },
     "ios": {
       "bundleIdentifier": "com.balasch.rntimeout",
