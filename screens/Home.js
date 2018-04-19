@@ -5,7 +5,11 @@ import { Container, Header, Content, Footer, FooterTab, Button, Icon, Text } fro
 const SCREEN_HEIGHT = Dimensions.get('window').height;
 const SCREEN_WIDTH = Dimensions.get('window').width;
 const IMAGE_BACKGROUND = require('../assets/img/background.jpg');
-const BARCELONA = require('../assets/img/barcelona.png');
+const BARCELONA = require('../assets/img/barcelona.jpg');
+const TARRAGONA = require('../assets/img/tarragona.jpg');
+const GIRONA = require('../assets/img/girona.png');
+const LLEIDA = require('../assets/img/lleida.jpg');
+
 export default class Home extends React.Component {  
 
   onPress = () => {
@@ -19,8 +23,8 @@ export default class Home extends React.Component {
     // withou footer, height - 84
     const availableHeight = SCREEN_HEIGHT - 84;
 
-    const boxHeight = availableHeight / 3;
-    
+    const boxHeight = availableHeight / 4;
+
     return (
         <ImageBackground source={IMAGE_BACKGROUND} style={{flex: 1}}>
             <Container>
@@ -34,13 +38,18 @@ export default class Home extends React.Component {
                             </TouchableOpacity>
                         </View>
                         <View>
-                            <TouchableOpacity onPress={this._onPressButton} style={{ flex: 1, backgroundColor: 'white', height: boxHeight, width: undefined, alignItems: 'center'}}>
-                                <Image source={BARCELONA} style={{ resizeMode: 'cover', opacity: 0.2 }} />
+                            <TouchableOpacity onPress={this._onPressButton} style={{ flex: 1, backgroundColor: '#8b9fbf', height: boxHeight, width: undefined, alignItems: 'center'}}>
+                                <Image source={GIRONA} style={{ resizeMode: 'cover', opacity: 0.2 }} />
                             </TouchableOpacity>
                         </View>
                         <View>
-                            <TouchableOpacity onPress={this._onPressButton} style={{ flex: 1, backgroundColor: 'grey', height: boxHeight, width: undefined, alignItems: 'center'}}>
-                                <Image source={BARCELONA} style={{ resizeMode: 'cover', opacity: 0.2 }} />
+                            <TouchableOpacity onPress={this._onPressButton} style={{ flex: 1, backgroundColor: '#8b9fbf', height: boxHeight, width: undefined, alignItems: 'center'}}>
+                                <Image source={LLEIDA} style={{ resizeMode: 'cover', opacity: 0.2 }} />
+                            </TouchableOpacity>
+                        </View>                        
+                        <View>
+                            <TouchableOpacity onPress={this._onPressButton} style={{ flex: 1, backgroundColor: '#8b9fbf', height: boxHeight, width: undefined, alignItems: 'center'}}>
+                                <Image source={TARRAGONA} style={{ resizeMode: 'cover', opacity: 0.2 }} />
                             </TouchableOpacity>
                         </View>
                     </View>
