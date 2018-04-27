@@ -21,18 +21,25 @@ export default class Home extends React.Component {
     //const availableHeight = SCREEN_HEIGHT - 140;
 
     // withou footer, height - 84
-    const availableHeight = SCREEN_HEIGHT - 84;
+    const availableHeight = SCREEN_HEIGHT - 60;
 
     const boxHeight = availableHeight / 4;
+
+    _openMenu = () => {
+        console.log('click');
+    }
 
     return (
         <ImageBackground source={IMAGE_BACKGROUND} style={{flex: 1}}>
             <Container>
                 <Content>
-                <View style={{ flex: 1, backgroundColor: 'white', height: 60}}>
+                    <View style={{ flex: 1, backgroundColor: 'white', height: 60, paddingTop: 15 }}>
+                        <Button>
+                            <Icon name='menu' onClose={() => this._openMenu()}  />
+                        </Button>
                     </View>
                     <View style={{ flex: 1 }}>
-                        <View>
+                        <View>                            
                             <TouchableOpacity onPress={this._onPressButton} style={{ flex: 1, backgroundColor: '#8b9fbf', height: boxHeight, width: undefined, alignItems: 'center'}}>
                                 <Image source={BARCELONA} style={{ resizeMode: 'cover', opacity: 0.2 }} />
                             </TouchableOpacity>
